@@ -1,4 +1,6 @@
-$('li').on('click', function() {
-	$(this).text("Clicked!").delay(800).fadeOut(400);
+$("#ig a").click(function(event) {
+	event.preventDefault();
+	var href = $(this).attr('href');
+	console.log(href);
 });
 
